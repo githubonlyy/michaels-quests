@@ -10,6 +10,10 @@ import lettersQ from '../data/questions/letters.json'
 import colorsQ from '../data/questions/colors.json'
 import countingQ from '../data/questions/counting.json'
 import matchQ from '../data/questions/match.json'
+import vehiclesQ from '../data/questions/vehicles.json'
+import soundsQ from '../data/questions/sounds.json'
+import digitsQ from '../data/questions/digits.json'
+import oppositesQ from '../data/questions/opposites.json'
 import shapesQ from '../data/questions/shapes.json'
 import compareQ from '../data/questions/compare.json'
 import NumberPad from './widgets/NumberPad.jsx'
@@ -23,6 +27,7 @@ import VaultReveal from './VaultReveal.jsx'
 const BANKS = {
   letters: lettersQ, colors: colorsQ, counting: countingQ,
   match: matchQ, shapes: shapesQ, compare: compareQ,
+  vehicles: vehiclesQ, sounds: soundsQ, digits: digitsQ, opposites: oppositesQ,
 }
 const WIDGETS = {
   bigtiles: BigTiles, countobjects: CountObjects, numberpad: NumberPad, twochoice: TwoChoice,
@@ -80,6 +85,43 @@ function buildClassic(eventId, q, bank) {
         tiles,
       }
     }
+    case 'vehicles':
+      return {
+        prompt: q.speak,
+        display: null,
+        speak: q.speak,
+        answerSpeak: q.answerSpeak,
+        answerText: q.answer,
+        tiles: tilesFrom(q.options, q.answer, 'emoji'),
+      }
+    case 'sounds':
+      // the 🔊 button is the question here — he taps it to hear the sound again
+      return {
+        prompt: q.speak,
+        display: { kind: 'hear' },
+        speak: q.speak,
+        answerSpeak: q.answerSpeak,
+        answerText: q.answer,
+        tiles: tilesFrom(q.options, q.answer, 'emoji'),
+      }
+    case 'digits':
+      return {
+        prompt: q.speak,
+        display: q.kind === 'dots' ? { kind: 'count', emoji: q.emoji, n: q.n } : null,
+        speak: q.speak,
+        answerSpeak: q.answerSpeak,
+        answerText: q.digit,
+        tiles: tilesFrom(q.options, q.digit, 'text'),
+      }
+    case 'opposites':
+      return {
+        prompt: q.speak,
+        display: { kind: 'emoji', value: q.emoji },
+        speak: q.speak,
+        answerSpeak: q.answerSpeak,
+        answerText: q.answer,
+        tiles: tilesFrom(q.options, q.answer, 'emoji'),
+      }
     case 'match': {
       const others = shuffle(bank.filter((x) => x.match !== q.match)).slice(0, 3)
       return {
@@ -138,6 +180,10 @@ function buildBalloon(eventId, q, bank) {
   if (eventId === 'letters') {
     const { tiles: _tiles, ...base } = buildClassic('letters', q, bank)
     return { ...base, options: balloonOptions(q.letter, q.options.filter((o) => o !== q.letter)) }
+  }
+  if (eventId === 'digits') {
+    const { tiles: _tiles, ...base } = buildClassic('digits', q, bank)
+    return { ...base, options: balloonOptions(q.digit, q.options.filter((o) => o !== q.digit)) }
   }
   // counting
   return {

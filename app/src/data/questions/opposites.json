@@ -1,0 +1,386 @@
+[
+  {
+    "emoji": "🔥",
+    "answer": "❄️",
+    "options": [
+      "❄️",
+      "🌙",
+      "🐇",
+      "⬇️"
+    ],
+    "speak": "מה ההפך מחם?",
+    "answerSpeak": "קר"
+  },
+  {
+    "emoji": "❄️",
+    "answer": "🔥",
+    "options": [
+      "🔥",
+      "🐭",
+      "😢",
+      "🐧"
+    ],
+    "speak": "מה ההפך מקר?",
+    "answerSpeak": "חם"
+  },
+  {
+    "emoji": "☀️",
+    "answer": "🌙",
+    "options": [
+      "🌙",
+      "🐇",
+      "⬇️",
+      "🌑"
+    ],
+    "speak": "מה ההפך מיום?",
+    "answerSpeak": "לילה"
+  },
+  {
+    "emoji": "🌙",
+    "answer": "☀️",
+    "options": [
+      "☀️",
+      "😢",
+      "🐧",
+      "🔒"
+    ],
+    "speak": "מה ההפך מלילה?",
+    "answerSpeak": "יום"
+  },
+  {
+    "emoji": "🐘",
+    "answer": "🐭",
+    "options": [
+      "🐭",
+      "⬇️",
+      "🌑",
+      "🥃"
+    ],
+    "speak": "מה ההפך מגדול?",
+    "answerSpeak": "קטן"
+  },
+  {
+    "emoji": "🐭",
+    "answer": "🐘",
+    "options": [
+      "🐘",
+      "🐧",
+      "🔒",
+      "🪶"
+    ],
+    "speak": "מה ההפך מקטן?",
+    "answerSpeak": "גדול"
+  },
+  {
+    "emoji": "🐢",
+    "answer": "🐇",
+    "options": [
+      "🐇",
+      "🌑",
+      "🥃",
+      "🏜️"
+    ],
+    "speak": "מה ההפך מלאט?",
+    "answerSpeak": "מהר"
+  },
+  {
+    "emoji": "🐇",
+    "answer": "🐢",
+    "options": [
+      "🐢",
+      "🔒",
+      "🪶",
+      "🤫"
+    ],
+    "speak": "מה ההפך ממהר?",
+    "answerSpeak": "לאט"
+  },
+  {
+    "emoji": "😀",
+    "answer": "😢",
+    "options": [
+      "😢",
+      "🥃",
+      "🏜️",
+      "🍋"
+    ],
+    "speak": "מה ההפך משמח?",
+    "answerSpeak": "עצוב"
+  },
+  {
+    "emoji": "😢",
+    "answer": "😀",
+    "options": [
+      "😀",
+      "🪶",
+      "🤫",
+      "🐷"
+    ],
+    "speak": "מה ההפך מעצוב?",
+    "answerSpeak": "שמח"
+  },
+  {
+    "emoji": "⬆️",
+    "answer": "⬇️",
+    "options": [
+      "⬇️",
+      "🏜️",
+      "🍋",
+      "🐛"
+    ],
+    "speak": "מה ההפך מלמעלה?",
+    "answerSpeak": "למטה"
+  },
+  {
+    "emoji": "⬇️",
+    "answer": "⬆️",
+    "options": [
+      "⬆️",
+      "🤫",
+      "🐷",
+      "❄️"
+    ],
+    "speak": "מה ההפך מלמטה?",
+    "answerSpeak": "למעלה"
+  },
+  {
+    "emoji": "🦒",
+    "answer": "🐧",
+    "options": [
+      "🐧",
+      "🍋",
+      "🐛",
+      "🌙"
+    ],
+    "speak": "מה ההפך מגבוה?",
+    "answerSpeak": "נמוך"
+  },
+  {
+    "emoji": "🐧",
+    "answer": "🦒",
+    "options": [
+      "🦒",
+      "🐷",
+      "❄️",
+      "🐭"
+    ],
+    "speak": "מה ההפך מנמוך?",
+    "answerSpeak": "גבוה"
+  },
+  {
+    "emoji": "💡",
+    "answer": "🌑",
+    "options": [
+      "🌑",
+      "🐛",
+      "🌙",
+      "🐇"
+    ],
+    "speak": "מה ההפך מאור?",
+    "answerSpeak": "חושך"
+  },
+  {
+    "emoji": "🌑",
+    "answer": "💡",
+    "options": [
+      "💡",
+      "❄️",
+      "🐭",
+      "😢"
+    ],
+    "speak": "מה ההפך מחושך?",
+    "answerSpeak": "אור"
+  },
+  {
+    "emoji": "🚪",
+    "answer": "🔒",
+    "options": [
+      "🔒",
+      "🌙",
+      "🐇",
+      "⬇️"
+    ],
+    "speak": "מה ההפך מפתוח?",
+    "answerSpeak": "סגור"
+  },
+  {
+    "emoji": "🔒",
+    "answer": "🚪",
+    "options": [
+      "🚪",
+      "🐭",
+      "😢",
+      "🐧"
+    ],
+    "speak": "מה ההפך מסגור?",
+    "answerSpeak": "פתוח"
+  },
+  {
+    "emoji": "🥛",
+    "answer": "🥃",
+    "options": [
+      "🥃",
+      "🐇",
+      "⬇️",
+      "🌑"
+    ],
+    "speak": "מה ההפך ממלא?",
+    "answerSpeak": "ריק"
+  },
+  {
+    "emoji": "🥃",
+    "answer": "🥛",
+    "options": [
+      "🥛",
+      "😢",
+      "🐧",
+      "🔒"
+    ],
+    "speak": "מה ההפך מריק?",
+    "answerSpeak": "מלא"
+  },
+  {
+    "emoji": "🪨",
+    "answer": "🪶",
+    "options": [
+      "🪶",
+      "⬇️",
+      "🌑",
+      "🥃"
+    ],
+    "speak": "מה ההפך מכבד?",
+    "answerSpeak": "קל"
+  },
+  {
+    "emoji": "🪶",
+    "answer": "🪨",
+    "options": [
+      "🪨",
+      "🐧",
+      "🔒",
+      "🏜️"
+    ],
+    "speak": "מה ההפך מקל?",
+    "answerSpeak": "כבד"
+  },
+  {
+    "emoji": "💦",
+    "answer": "🏜️",
+    "options": [
+      "🏜️",
+      "🌑",
+      "🥃",
+      "🤫"
+    ],
+    "speak": "מה ההפך מרטוב?",
+    "answerSpeak": "יבש"
+  },
+  {
+    "emoji": "🏜️",
+    "answer": "💦",
+    "options": [
+      "💦",
+      "🔒",
+      "🪶",
+      "🍋"
+    ],
+    "speak": "מה ההפך מיבש?",
+    "answerSpeak": "רטוב"
+  },
+  {
+    "emoji": "📣",
+    "answer": "🤫",
+    "options": [
+      "🤫",
+      "🥃",
+      "🏜️",
+      "🐷"
+    ],
+    "speak": "מה ההפך מרועש?",
+    "answerSpeak": "שקט"
+  },
+  {
+    "emoji": "🤫",
+    "answer": "📣",
+    "options": [
+      "📣",
+      "🪶",
+      "🍋",
+      "🐛"
+    ],
+    "speak": "מה ההפך משקט?",
+    "answerSpeak": "רועש"
+  },
+  {
+    "emoji": "🍬",
+    "answer": "🍋",
+    "options": [
+      "🍋",
+      "🏜️",
+      "🐷",
+      "❄️"
+    ],
+    "speak": "מה ההפך ממתוק?",
+    "answerSpeak": "חמוץ"
+  },
+  {
+    "emoji": "🍋",
+    "answer": "🍬",
+    "options": [
+      "🍬",
+      "🤫",
+      "🐛",
+      "🌙"
+    ],
+    "speak": "מה ההפך מחמוץ?",
+    "answerSpeak": "מתוק"
+  },
+  {
+    "emoji": "🧼",
+    "answer": "🐷",
+    "options": [
+      "🐷",
+      "🍋",
+      "❄️",
+      "🐭"
+    ],
+    "speak": "מה ההפך מנקי?",
+    "answerSpeak": "מלוכלך"
+  },
+  {
+    "emoji": "🐷",
+    "answer": "🧼",
+    "options": [
+      "🧼",
+      "🐛",
+      "🌙",
+      "🐇"
+    ],
+    "speak": "מה ההפך ממלוכלך?",
+    "answerSpeak": "נקי"
+  },
+  {
+    "emoji": "💪",
+    "answer": "🐛",
+    "options": [
+      "🐛",
+      "❄️",
+      "🐭",
+      "😢"
+    ],
+    "speak": "מה ההפך מחזק?",
+    "answerSpeak": "חלש"
+  },
+  {
+    "emoji": "🐛",
+    "answer": "💪",
+    "options": [
+      "💪",
+      "🌙",
+      "🐇",
+      "⬇️"
+    ],
+    "speak": "מה ההפך מחלש?",
+    "answerSpeak": "חזק"
+  }
+]

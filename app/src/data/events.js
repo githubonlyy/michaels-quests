@@ -1,5 +1,7 @@
 // Event board metadata for gan (age 4). Question banks live in
 // ./questions/*.json. Every prompt is spoken aloud — see match/speak.js.
+//
+// Ten subjects live here; the board shows six a day — see data/board.js.
 
 // Game modes. 'classic' uses the event's own widget; arcade modes are shared.
 export const MODES = {
@@ -72,6 +74,58 @@ export const EVENTS = [
     headerColor: 'bg-gradient-to-br from-emerald-400 to-emerald-600',
     textColor: 'text-emerald-500',
     widget: 'twochoice',
+    modes: ['classic'],
+  },
+  {
+    id: 'vehicles',
+    title: 'רכבים ומקצועות',
+    type: 'מי עושה מה',
+    description: 'מי מכבה את הדליקה? מי טס לחלל?',
+    emoji: '🚒',
+    color: 'bg-red-500',
+    borderColor: 'border-red-700',
+    headerColor: 'bg-gradient-to-br from-red-400 to-red-600',
+    textColor: 'text-red-500',
+    widget: 'bigtiles',
+    modes: ['classic'],
+  },
+  {
+    id: 'sounds',
+    title: 'קולות בעלי חיים',
+    type: 'מי אומר מה',
+    description: 'שומעים קול — ומוצאים את החיה!',
+    emoji: '🐮',
+    color: 'bg-lime-500',
+    borderColor: 'border-lime-700',
+    headerColor: 'bg-gradient-to-br from-lime-400 to-lime-600',
+    textColor: 'text-lime-500',
+    widget: 'bigtiles',
+    modes: ['classic'],
+  },
+  {
+    id: 'digits',
+    title: 'ספרות',
+    type: '0 עד 10',
+    description: 'איפה המספר? סופרים ובוחרים!',
+    emoji: '7️⃣',
+    color: 'bg-cyan-500',
+    borderColor: 'border-cyan-700',
+    headerColor: 'bg-gradient-to-br from-cyan-400 to-cyan-600',
+    textColor: 'text-cyan-500',
+    widget: 'bigtiles',
+    modes: ['classic', 'balloon'],
+  },
+  {
+    id: 'opposites',
+    title: 'הפכים',
+    type: 'חם וקר',
+    description: 'מה ההפך מחם? מה ההפך מגדול?',
+    emoji: '↔️',
+    color: 'bg-violet-500',
+    borderColor: 'border-violet-700',
+    headerColor: 'bg-gradient-to-br from-violet-400 to-violet-600',
+    textColor: 'text-violet-500',
+    widget: 'bigtiles',
     modes: ['classic'],
   },
   {

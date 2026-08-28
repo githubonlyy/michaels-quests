@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
-import { Coins, Check, X, Sparkles, Gift } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { Coins, Check, X, Sparkles, Gift, ChevronDown, ChevronUp } from 'lucide-react'
 import { EVENTS, MODES } from '../data/events.js'
+import { dailySubjects } from '../data/board.js'
 import { usePlayer, businessDate } from '../context/PlayerContext.jsx'
 import { sfx } from '../match/sounds.js'
 import { speak } from '../match/speak.js'
@@ -9,6 +10,13 @@ export default function EventBoard({ onStartMatch }) {
   const { state, playedToday, config } = usePlayer()
   const [preview, setPreview] = useState(null) // event shown in the pre-match modal
   const [chestOpen, setChestOpen] = useState(false)
+  const [showAll, setShowAll] = useState(false) // "עוד משימות" reveals the rest of the ten
+
+  const today = businessDate()
+  const daily = useMemo(() => new Set(dailySubjects(today, EVENTS).map((e) => e.id)), [today])
+  // today's six, plus anything he already played today so a finished card never
+  // disappears on him — in the board's own order
+  const visible = showAll ? EVENTS : EVENTS.filter((e) => daily.has(e.id) || playedToday(e.id))
 
   const goal = config.dailyGoal
   const doneCount = EVENTS.filter((e) => playedToday(e.id)).length
@@ -72,8 +80,9 @@ export default function EventBoard({ onStartMatch }) {
 
       {chestOpen && <ChestModal onClose={() => setChestOpen(false)} />}
 
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 lg:gap-8">
-        {EVENTS.map((event) => {
+        {visible.map((event) => {
           const practice = playedToday(event.id)
           return (
             <div
@@ -113,6 +122,25 @@ export default function EventBoard({ onStartMatch }) {
           )
         })}
       </div>
+
+      {visible.length < EVENTS.length && (
+        <button
+          onClick={() => { sfx.click(); setShowAll(true) }}
+          className="w-full min-h-16 flex items-center justify-center gap-2 bg-(--t-panel) hover:bg-(--t-nav) text-white font-black text-lg rounded-2xl border-4 border-(--t-panel-border) backdrop-blur-sm transition-colors"
+        >
+          <ChevronDown size={26} strokeWidth={3} />
+          עוד משימות
+        </button>
+      )}
+      {showAll && (
+        <button
+          onClick={() => { sfx.click(); setShowAll(false) }}
+          className="w-full min-h-16 flex items-center justify-center gap-2 bg-(--t-panel) hover:bg-(--t-nav) text-white font-black text-lg rounded-2xl border-4 border-(--t-panel-border) backdrop-blur-sm transition-colors"
+        >
+          <ChevronUp size={26} strokeWidth={3} />
+          פחות משימות
+        </button>
+      )}
 
       {preview && (
         <PreviewModal

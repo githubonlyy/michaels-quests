@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import {
   Trophy, Target, Flame, Crown, CaseSensitive, Palette, Hash, Puzzle,
   Shapes, Scale, Coins, Shirt, ShoppingBag, Gift, Lock,
+  Truck, Volume2, ListOrdered, ArrowLeftRight,
 } from 'lucide-react'
 import { TROPHIES } from '../data/trophies.js'
 import { usePlayer } from '../context/PlayerContext.jsx'
@@ -23,6 +24,10 @@ const ICONS = {
   shirt: Shirt,
   bag: ShoppingBag,
   gift: Gift,
+  truck: Truck,
+  sound: Volume2,
+  digits: ListOrdered,
+  swap: ArrowLeftRight,
 }
 
 export default function Trophies() {

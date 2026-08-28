@@ -5,9 +5,13 @@ import counting from '../data/questions/counting.json'
 import match from '../data/questions/match.json'
 import shapes from '../data/questions/shapes.json'
 import compare from '../data/questions/compare.json'
+import vehicles from '../data/questions/vehicles.json'
+import sounds from '../data/questions/sounds.json'
+import digits from '../data/questions/digits.json'
+import opposites from '../data/questions/opposites.json'
 import { EVENTS } from '../data/events.js'
 
-const BANKS = { letters, colors, counting, match, shapes, compare }
+const BANKS = { letters, colors, counting, match, shapes, compare, vehicles, sounds, digits, opposites }
 const HEBREW_LETTERS = 'אבגדהוזחטיכלמנסעפצקרשתךםןףץ'
 // the eight shapes a four-year-old is asked for (BigTiles knows more)
 const SHAPE_NAMES = ['circle', 'square', 'triangle', 'star', 'heart', 'rectangle', 'oval', 'diamond']
@@ -152,6 +156,78 @@ describe('compare.json', () => {
   it('has both kinds', () => {
     expect(compare.some((q) => q.kind === 'count')).toBe(true)
     expect(compare.some((q) => q.kind === 'number')).toBe(true)
+  })
+})
+
+describe('vehicles.json', () => {
+  it('answers a who/where question with one of four unique vehicles', () => {
+    vehicles.forEach((q, i) => {
+      expect(['who', 'where'], `vehicles[${i}] kind`).toContain(q.kind)
+      expect(q.answer, `vehicles[${i}] answer`).toBeTruthy()
+      expectOptions(q.options, q.answer, `vehicles[${i}]`)
+      expect(q.speak.endsWith('?'), `vehicles[${i}] speak is a question`).toBe(true)
+    })
+  })
+
+  it('covers both kinds and at least a dozen different vehicles', () => {
+    expect(vehicles.some((q) => q.kind === 'who')).toBe(true)
+    expect(vehicles.some((q) => q.kind === 'where')).toBe(true)
+    expect(new Set(vehicles.map((q) => q.answer)).size).toBeGreaterThanOrEqual(12)
+  })
+})
+
+describe('sounds.json', () => {
+  it('every item carries a spoken sound and four unique animals', () => {
+    sounds.forEach((q, i) => {
+      expect(q.sound, `sounds[${i}] sound`).toBeTruthy()
+      expect(q.speak, `sounds[${i}] speak repeats the sound`).toContain(q.sound)
+      expectOptions(q.options, q.answer, `sounds[${i}]`)
+    })
+  })
+
+  it('no two items share a sound', () => {
+    expect(new Set(sounds.map((q) => q.sound)).size).toBe(sounds.length)
+  })
+})
+
+describe('digits.json', () => {
+  it('asks for a numeral 0..10 among four unique numerals', () => {
+    digits.forEach((q, i) => {
+      expect(['hear', 'dots'], `digits[${i}] kind`).toContain(q.kind)
+      expect(Number(q.digit), `digits[${i}] digit`).toBeGreaterThanOrEqual(0)
+      expect(Number(q.digit), `digits[${i}] digit`).toBeLessThanOrEqual(10)
+      expectOptions(q.options, q.digit, `digits[${i}]`)
+      for (const o of q.options) expect(o, `digits[${i}] option ${o}`).toMatch(/^\d{1,2}$/)
+      if (q.kind === 'dots') {
+        expect(q.n, `digits[${i}] dots count`).toBe(Number(q.digit))
+        expect(q.n).toBeGreaterThanOrEqual(1)
+        expect(q.n).toBeLessThanOrEqual(10)
+        expect(q.emoji, `digits[${i}] emoji`).toBeTruthy()
+      }
+    })
+  })
+
+  it('every numeral 0..10 is asked, and the dots kind covers 1..10', () => {
+    const asked = new Set(digits.map((q) => q.digit))
+    for (let n = 0; n <= 10; n++) expect(asked.has(String(n)), `digit ${n}`).toBe(true)
+    const dotted = new Set(digits.filter((q) => q.kind === 'dots').map((q) => q.n))
+    for (let n = 1; n <= 10; n++) expect(dotted.has(n), `dots ${n}`).toBe(true)
+  })
+})
+
+describe('opposites.json', () => {
+  it('shows one picture and offers its opposite among four', () => {
+    opposites.forEach((q, i) => {
+      expect(q.emoji, `opposites[${i}] emoji`).toBeTruthy()
+      expect(q.answer, `opposites[${i}] answer`).not.toBe(q.emoji)
+      expect(q.options, `opposites[${i}] never offers the prompt itself`).not.toContain(q.emoji)
+      expectOptions(q.options, q.answer, `opposites[${i}]`)
+    })
+  })
+
+  it('pairs run both ways — every prompt is also asked as an answer', () => {
+    const pairs = new Set(opposites.map((q) => `${q.emoji}->${q.answer}`))
+    for (const q of opposites) expect(pairs.has(`${q.answer}->${q.emoji}`), `${q.answer} back to ${q.emoji}`).toBe(true)
   })
 })
 
