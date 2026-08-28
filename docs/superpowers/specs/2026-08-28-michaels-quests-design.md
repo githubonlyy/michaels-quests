@@ -24,7 +24,7 @@ My World (dance / draw / drive) — with four changes:
 | Topic | Decision |
 |---|---|
 | Local path | `C:\Users\liorg\AI\Claude\Personal\Micheal_Academia` (chosen over the sibling `AI\Michael_Academia`) |
-| Repo | `githubonlyy/michaels-quests` — **not created yet**; CI + `deploy.ps1` already point at it |
+| Repo | `githubonlyy/michaels-quests`, public, GitHub Pages via Actions on push to `master` — live at https://githubonlyy.github.io/michaels-quests/ |
 | Language | Hebrew-only UI, root `dir="rtl"`, masculine phrasing throughout. Icons + TTS carry all meaning |
 | Stack | Unchanged: Vite + React 19 + Tailwind v4 + lucide-react, localStorage key `michaels-quests-v1`, Vitest, oxlint |
 | Match format | 6 questions/match, no per-question timer, win ≥4, draw 3, loss <3 |

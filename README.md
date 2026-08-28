@@ -7,6 +7,7 @@ pre-reader who is also pre-counter: six short subjects, Hebrew text-to-speech on
 every prompt and every answer, no timers, three pick-each-time worlds
 (מכוניות / דינוזאורים / חלל), and a boy avatar that coins buy clothes for.
 
+- Live: https://githubonlyy.github.io/michaels-quests/
 - Design spec: [docs/superpowers/specs/2026-08-28-michaels-quests-design.md](docs/superpowers/specs/2026-08-28-michaels-quests-design.md)
 
 ## Develop
@@ -20,8 +21,8 @@ npm run lint     # oxlint
 npm run build
 ```
 
-Deploys to GitHub Pages on push to `master` (`.github/workflows/ci.yml`) once the
-repo exists. `deploy.ps1` is a manual fallback.
+Deploys automatically to GitHub Pages on push to `master` (`.github/workflows/ci.yml`).
+`deploy.ps1` is a manual fallback.
 
 ## Parent notes
 
