@@ -1,0 +1,506 @@
+[
+  {
+    "kind": "shape",
+    "ask": "circle",
+    "speak": "איפה העיגול?",
+    "answerSpeak": "עיגול",
+    "options": [
+      "circle",
+      "square",
+      "star",
+      "rectangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "square",
+    "speak": "איפה הריבוע?",
+    "answerSpeak": "ריבוע",
+    "options": [
+      "square",
+      "triangle",
+      "heart",
+      "oval"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "triangle",
+    "speak": "איפה המשולש?",
+    "answerSpeak": "משולש",
+    "options": [
+      "triangle",
+      "star",
+      "rectangle",
+      "diamond"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "star",
+    "speak": "איפה הכוכב?",
+    "answerSpeak": "כוכב",
+    "options": [
+      "star",
+      "heart",
+      "oval",
+      "circle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "heart",
+    "speak": "איפה הלב?",
+    "answerSpeak": "לב",
+    "options": [
+      "heart",
+      "rectangle",
+      "diamond",
+      "square"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "rectangle",
+    "speak": "איפה המלבן?",
+    "answerSpeak": "מלבן",
+    "options": [
+      "rectangle",
+      "oval",
+      "circle",
+      "triangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "oval",
+    "speak": "איפה האליפסה? העיגול הארוך",
+    "answerSpeak": "אליפסה",
+    "options": [
+      "oval",
+      "diamond",
+      "square",
+      "star"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "diamond",
+    "speak": "איפה המעוין? היהלום",
+    "answerSpeak": "מעוין",
+    "options": [
+      "diamond",
+      "circle",
+      "triangle",
+      "heart"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "circle",
+    "speak": "איפה העיגול?",
+    "answerSpeak": "עיגול",
+    "options": [
+      "circle",
+      "triangle",
+      "heart",
+      "oval"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "square",
+    "speak": "איפה הריבוע?",
+    "answerSpeak": "ריבוע",
+    "options": [
+      "square",
+      "star",
+      "rectangle",
+      "diamond"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "triangle",
+    "speak": "איפה המשולש?",
+    "answerSpeak": "משולש",
+    "options": [
+      "triangle",
+      "heart",
+      "oval",
+      "circle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "star",
+    "speak": "איפה הכוכב?",
+    "answerSpeak": "כוכב",
+    "options": [
+      "star",
+      "rectangle",
+      "diamond",
+      "square"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "heart",
+    "speak": "איפה הלב?",
+    "answerSpeak": "לב",
+    "options": [
+      "heart",
+      "oval",
+      "circle",
+      "triangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "rectangle",
+    "speak": "איפה המלבן?",
+    "answerSpeak": "מלבן",
+    "options": [
+      "rectangle",
+      "diamond",
+      "square",
+      "star"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "oval",
+    "speak": "איפה האליפסה? העיגול הארוך",
+    "answerSpeak": "אליפסה",
+    "options": [
+      "oval",
+      "circle",
+      "triangle",
+      "heart"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "diamond",
+    "speak": "איפה המעוין? היהלום",
+    "answerSpeak": "מעוין",
+    "options": [
+      "diamond",
+      "square",
+      "star",
+      "rectangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "circle",
+    "speak": "איפה העיגול?",
+    "answerSpeak": "עיגול",
+    "options": [
+      "circle",
+      "star",
+      "rectangle",
+      "diamond"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "square",
+    "speak": "איפה הריבוע?",
+    "answerSpeak": "ריבוע",
+    "options": [
+      "square",
+      "heart",
+      "oval",
+      "circle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "triangle",
+    "speak": "איפה המשולש?",
+    "answerSpeak": "משולש",
+    "options": [
+      "triangle",
+      "rectangle",
+      "diamond",
+      "square"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "star",
+    "speak": "איפה הכוכב?",
+    "answerSpeak": "כוכב",
+    "options": [
+      "star",
+      "oval",
+      "circle",
+      "triangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "heart",
+    "speak": "איפה הלב?",
+    "answerSpeak": "לב",
+    "options": [
+      "heart",
+      "diamond",
+      "square",
+      "star"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "rectangle",
+    "speak": "איפה המלבן?",
+    "answerSpeak": "מלבן",
+    "options": [
+      "rectangle",
+      "circle",
+      "triangle",
+      "heart"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "oval",
+    "speak": "איפה האליפסה? העיגול הארוך",
+    "answerSpeak": "אליפסה",
+    "options": [
+      "oval",
+      "square",
+      "star",
+      "rectangle"
+    ]
+  },
+  {
+    "kind": "shape",
+    "ask": "diamond",
+    "speak": "איפה המעוין? היהלום",
+    "answerSpeak": "מעוין",
+    "options": [
+      "diamond",
+      "triangle",
+      "heart",
+      "oval"
+    ]
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🚗",
+      "🦖",
+      "🚗",
+      "🦖"
+    ],
+    "answer": "🚗",
+    "options": [
+      "🚗",
+      "⭐",
+      "🍎",
+      "🐶"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "⭐",
+      "🌙",
+      "⭐",
+      "🌙"
+    ],
+    "answer": "⭐",
+    "options": [
+      "⭐",
+      "🚀",
+      "🍌",
+      "🐱"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🍎",
+      "🍌",
+      "🍎",
+      "🍌"
+    ],
+    "answer": "🍎",
+    "options": [
+      "🍎",
+      "🐶",
+      "⚽",
+      "🌙"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🐶",
+      "🐱",
+      "🐶",
+      "🐱"
+    ],
+    "answer": "🐶",
+    "options": [
+      "🐶",
+      "🚗",
+      "🍎",
+      "⭐"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🔴",
+      "🔵",
+      "🔴",
+      "🔵"
+    ],
+    "answer": "🔴",
+    "options": [
+      "🔴",
+      "🟡",
+      "🟢",
+      "🟣"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🚀",
+      "👽",
+      "🚀",
+      "👽"
+    ],
+    "answer": "🚀",
+    "options": [
+      "🚀",
+      "🦖",
+      "⭐",
+      "🍌"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🌸",
+      "🍃",
+      "🌸",
+      "🍃"
+    ],
+    "answer": "🌸",
+    "options": [
+      "🌸",
+      "⚽",
+      "🐱",
+      "🚗"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "⚽",
+      "🏀",
+      "⚽",
+      "🏀"
+    ],
+    "answer": "⚽",
+    "options": [
+      "⚽",
+      "🐶",
+      "🌙",
+      "🍎"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🎈",
+      "🎁",
+      "🎈",
+      "🎁"
+    ],
+    "answer": "🎈",
+    "options": [
+      "🎈",
+      "🚗",
+      "⭐",
+      "🐱"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🦖",
+      "🥚",
+      "🦖",
+      "🥚"
+    ],
+    "answer": "🦖",
+    "options": [
+      "🦖",
+      "🚗",
+      "🌙",
+      "🍌"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🍓",
+      "🍋",
+      "🍓",
+      "🍋"
+    ],
+    "answer": "🍓",
+    "options": [
+      "🍓",
+      "🐶",
+      "🚀",
+      "⚽"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  },
+  {
+    "kind": "pattern",
+    "seq": [
+      "🐟",
+      "🦀",
+      "🐟",
+      "🦀"
+    ],
+    "answer": "🐟",
+    "options": [
+      "🐟",
+      "🚗",
+      "⭐",
+      "🍎"
+    ],
+    "speak": "מה בא אחר כך?",
+    "answerSpeak": "זה מה שבא אחר כך"
+  }
+]

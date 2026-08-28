@@ -1,0 +1,190 @@
+/* Dance activity — doll moves, floor tiles, falling notes, bursts.
+   Imported by src/world/Dance.jsx. The doll is an inline SVG we cannot
+   animate internally, so every move is a transform on its wrapper. */
+
+/* --- doll --------------------------------------------------------------- */
+.dance-doll-stage {
+  perspective: 900px;
+}
+.dance-doll,
+.dance-doll-move {
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+@keyframes danceIdle {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  30% { transform: translateY(-10px) scale(0.98, 1.03); }
+  60% { transform: translateY(0) scale(1.03, 0.97); }
+}
+.dance-idle {
+  animation: danceIdle var(--beat, 500ms) ease-in-out infinite;
+}
+@keyframes danceClap {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-9deg) scale(1.06); }
+  50% { transform: rotate(9deg) scale(1.09); }
+  75% { transform: rotate(-5deg) scale(1.04); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+@keyframes danceHands {
+  0% { transform: translateY(0) scale(1, 1); }
+  35% { transform: translateY(-26px) scale(0.94, 1.1) rotate(-3deg); }
+  65% { transform: translateY(-18px) scale(0.96, 1.07) rotate(3deg); }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+@keyframes danceSpin {
+  0% { transform: rotateY(0deg) scale(1); }
+  50% { transform: rotateY(180deg) scale(1.05); }
+  100% { transform: rotateY(360deg) scale(1); }
+}
+@keyframes danceJump {
+  0% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(8px) scale(1.12, 0.84); }
+  50% { transform: translateY(-76px) scale(0.94, 1.08); }
+  85% { transform: translateY(0) scale(1.08, 0.9); }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+@keyframes danceOops {
+  0%, 100% { transform: rotate(0deg) translateX(0); }
+  20% { transform: rotate(-8deg) translateX(-8px); }
+  40% { transform: rotate(8deg) translateX(8px); }
+  60% { transform: rotate(-5deg) translateX(-4px); }
+  80% { transform: rotate(4deg) translateX(3px); }
+}
+.dance-move-clap { animation: danceClap 0.45s ease-out; }
+.dance-move-hands { animation: danceHands 0.55s ease-out; }
+.dance-move-spin { animation: danceSpin 0.65s ease-in-out; }
+.dance-move-jump { animation: danceJump 0.55s cubic-bezier(0.3, 1.2, 0.5, 1); }
+.dance-move-oops { animation: danceOops 0.45s ease-in-out; }
+
+/* --- spotlight ---------------------------------------------------------- */
+@keyframes spotSway {
+  0% { transform: translateX(-6%) skewX(-4deg); }
+  100% { transform: translateX(6%) skewX(4deg); }
+}
+.dance-spot {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 34% 90% at 50% 0%, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.06) 55%, transparent 75%);
+  animation: spotSway 4.5s ease-in-out infinite alternate;
+  transform-origin: 50% 0%;
+}
+
+/* --- dance floor -------------------------------------------------------- */
+.dance-floor {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 150%;
+  transform: translateX(-50%) perspective(520px) rotateX(58deg);
+  transform-origin: 50% 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  padding: 8px;
+  pointer-events: none;
+}
+.dance-tile {
+  aspect-ratio: 2 / 1;
+  border-radius: 8px;
+  opacity: 0.45;
+  transition: opacity 110ms ease-out, transform 110ms ease-out, filter 110ms ease-out;
+}
+.dance-tile.lit {
+  opacity: 0.95;
+  transform: scale(1.04);
+  filter: brightness(1.25) saturate(1.2);
+  box-shadow: 0 0 18px 4px rgba(255, 255, 255, 0.35);
+}
+
+/* --- lanes & notes ------------------------------------------------------ */
+.dance-lane {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  border-inline-start: 2px dashed rgba(255, 255, 255, 0.12);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.07) 100%);
+  pointer-events: none;
+}
+.dance-target {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  border-radius: 9999px;
+  border: 5px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12), inset 0 0 18px rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  transition: transform 90ms ease-out, box-shadow 90ms ease-out;
+}
+.dance-target.lit {
+  transform: scale(1.1);
+  box-shadow: 0 0 24px 6px rgba(255, 255, 255, 0.45), inset 0 0 22px rgba(255, 255, 255, 0.4);
+}
+.dance-note {
+  position: absolute;
+  top: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 5px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 1;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+  will-change: transform;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* --- hit feedback ------------------------------------------------------- */
+@keyframes danceBurst {
+  0% { transform: translate(0, 0) scale(0.4) rotate(0deg); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(1.1) rotate(var(--rot, 180deg)); opacity: 0; }
+}
+.dance-burst {
+  position: absolute;
+  font-size: 22px;
+  line-height: 1;
+  pointer-events: none;
+  animation: danceBurst 0.75s ease-out forwards;
+}
+@keyframes danceJudge {
+  0% { transform: translate(50%, 0) scale(0.5); opacity: 0; }
+  25% { transform: translate(50%, -14px) scale(1.2); opacity: 1; }
+  100% { transform: translate(50%, -64px) scale(1); opacity: 0; }
+}
+.dance-judge {
+  position: absolute;
+  pointer-events: none;
+  animation: danceJudge 0.9s ease-out forwards;
+  white-space: nowrap;
+}
+@keyframes danceCheer {
+  0% { transform: scale(0.4) rotate(-6deg); opacity: 0; }
+  30% { transform: scale(1.15) rotate(3deg); opacity: 1; }
+  70% { transform: scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1.05); opacity: 0; }
+}
+.dance-cheer {
+  animation: danceCheer 1.6s ease-out forwards;
+}
+@keyframes danceStar {
+  0% { transform: scale(0) rotate(-40deg); opacity: 0; }
+  60% { transform: scale(1.35) rotate(8deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.dance-star {
+  animation: danceStar 0.55s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dance-spot, .dance-idle { animation: none; }
+  .dance-move-spin { animation: danceClap 0.4s ease-out; }
+  .dance-burst { display: none; }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "emoji": "🍓",
+    "n": 3,
+    "speak": "כמה תותים יש כאן?",
+    "answerSpeak": "שלוש"
+  },
+  {
+    "emoji": "🍎",
+    "n": 5,
+    "speak": "כמה תפוחים יש כאן?",
+    "answerSpeak": "חמש"
+  },
+  {
+    "emoji": "🎈",
+    "n": 2,
+    "speak": "כמה בלונים יש כאן?",
+    "answerSpeak": "שתיים"
+  },
+  {
+    "emoji": "⭐",
+    "n": 7,
+    "speak": "כמה כוכבים יש כאן?",
+    "answerSpeak": "שבע"
+  },
+  {
+    "emoji": "🌸",
+    "n": 4,
+    "speak": "כמה פרחים יש כאן?",
+    "answerSpeak": "ארבע"
+  },
+  {
+    "emoji": "🐶",
+    "n": 8,
+    "speak": "כמה כלבים יש כאן?",
+    "answerSpeak": "שמונה"
+  },
+  {
+    "emoji": "🐱",
+    "n": 1,
+    "speak": "כמה חתולים יש כאן?",
+    "answerSpeak": "אחת"
+  },
+  {
+    "emoji": "🦋",
+    "n": 6,
+    "speak": "כמה פרפרים יש כאן?",
+    "answerSpeak": "שש"
+  },
+  {
+    "emoji": "🍌",
+    "n": 9,
+    "speak": "כמה בננות יש כאן?",
+    "answerSpeak": "תשע"
+  },
+  {
+    "emoji": "🥕",
+    "n": 10,
+    "speak": "כמה גזרים יש כאן?",
+    "answerSpeak": "עשר"
+  },
+  {
+    "emoji": "🐟",
+    "n": 3,
+    "speak": "כמה דגים יש כאן?",
+    "answerSpeak": "שלוש"
+  },
+  {
+    "emoji": "🧸",
+    "n": 5,
+    "speak": "כמה דובים יש כאן?",
+    "answerSpeak": "חמש"
+  },
+  {
+    "emoji": "🍭",
+    "n": 4,
+    "speak": "כמה סוכריות יש כאן?",
+    "answerSpeak": "ארבע"
+  },
+  {
+    "emoji": "🎂",
+    "n": 7,
+    "speak": "כמה עוגות יש כאן?",
+    "answerSpeak": "שבע"
+  },
+  {
+    "emoji": "🍪",
+    "n": 2,
+    "speak": "כמה עוגיות יש כאן?",
+    "answerSpeak": "שתיים"
+  },
+  {
+    "emoji": "🚗",
+    "n": 8,
+    "speak": "כמה מכוניות יש כאן?",
+    "answerSpeak": "שמונה"
+  },
+  {
+    "emoji": "⚽",
+    "n": 6,
+    "speak": "כמה כדורים יש כאן?",
+    "answerSpeak": "שש"
+  },
+  {
+    "emoji": "💎",
+    "n": 9,
+    "speak": "כמה יהלומים יש כאן?",
+    "answerSpeak": "תשע"
+  },
+  {
+    "emoji": "👑",
+    "n": 1,
+    "speak": "כמה כתרים יש כאן?",
+    "answerSpeak": "אחת"
+  },
+  {
+    "emoji": "🦄",
+    "n": 10,
+    "speak": "כמה חדי קרן יש כאן?",
+    "answerSpeak": "עשר"
+  },
+  {
+    "emoji": "🐞",
+    "n": 5,
+    "speak": "כמה חיפושיות יש כאן?",
+    "answerSpeak": "חמש"
+  },
+  {
+    "emoji": "🐝",
+    "n": 3,
+    "speak": "כמה דבורים יש כאן?",
+    "answerSpeak": "שלוש"
+  },
+  {
+    "emoji": "🍉",
+    "n": 7,
+    "speak": "כמה אבטיחים יש כאן?",
+    "answerSpeak": "שבע"
+  },
+  {
+    "emoji": "🍇",
+    "n": 4,
+    "speak": "כמה אשכולות ענבים יש כאן?",
+    "answerSpeak": "ארבע"
+  },
+  {
+    "emoji": "🐢",
+    "n": 8,
+    "speak": "כמה צבים יש כאן?",
+    "answerSpeak": "שמונה"
+  },
+  {
+    "emoji": "🐰",
+    "n": 2,
+    "speak": "כמה ארנבים יש כאן?",
+    "answerSpeak": "שתיים"
+  },
+  {
+    "emoji": "🦆",
+    "n": 6,
+    "speak": "כמה ברווזים יש כאן?",
+    "answerSpeak": "שש"
+  },
+  {
+    "emoji": "❤️",
+    "n": 9,
+    "speak": "כמה לבבות יש כאן?",
+    "answerSpeak": "תשע"
+  },
+  {
+    "emoji": "🎀",
+    "n": 5,
+    "speak": "כמה סרטים יש כאן?",
+    "answerSpeak": "חמש"
+  },
+  {
+    "emoji": "👠",
+    "n": 10,
+    "speak": "כמה נעליים יש כאן?",
+    "answerSpeak": "עשר"
+  },
+  {
+    "emoji": "🧦",
+    "n": 3,
+    "speak": "כמה גרביים יש כאן?",
+    "answerSpeak": "שלוש"
+  },
+  {
+    "emoji": "🍦",
+    "n": 7,
+    "speak": "כמה גלידות יש כאן?",
+    "answerSpeak": "שבע"
+  },
+  {
+    "emoji": "🥚",
+    "n": 4,
+    "speak": "כמה ביצים יש כאן?",
+    "answerSpeak": "ארבע"
+  },
+  {
+    "emoji": "🔑",
+    "n": 8,
+    "speak": "כמה מפתחות יש כאן?",
+    "answerSpeak": "שמונה"
+  },
+  {
+    "emoji": "🕯️",
+    "n": 6,
+    "speak": "כמה נרות יש כאן?",
+    "answerSpeak": "שש"
+  },
+  {
+    "emoji": "🌻",
+    "n": 2,
+    "speak": "כמה חמניות יש כאן?",
+    "answerSpeak": "שתיים"
+  },
+  {
+    "emoji": "🐬",
+    "n": 9,
+    "speak": "כמה דולפינים יש כאן?",
+    "answerSpeak": "תשע"
+  },
+  {
+    "emoji": "🐙",
+    "n": 5,
+    "speak": "כמה תמנונים יש כאן?",
+    "answerSpeak": "חמש"
+  },
+  {
+    "emoji": "🎃",
+    "n": 7,
+    "speak": "כמה דלעות יש כאן?",
+    "answerSpeak": "שבע"
+  },
+  {
+    "emoji": "🍩",
+    "n": 3,
+    "speak": "כמה סופגניות יש כאן?",
+    "answerSpeak": "שלוש"
+  }
+]

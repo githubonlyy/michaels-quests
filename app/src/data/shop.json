@@ -1,0 +1,46 @@
+[
+  {
+    "id": "popsicle",
+    "title": "ארטיק",
+    "type": "פינוק",
+    "desc": "ארטיק לבחירתך בפעם הבאה שיוצאים!",
+    "cost": 300,
+    "rarity": "RARE",
+    "icon": "star",
+    "bgColor": "bg-cyan-500",
+    "borderColor": "border-cyan-700"
+  },
+  {
+    "id": "movie-pick",
+    "title": "בוחר סרט",
+    "type": "ערב משפחתי",
+    "desc": "אתה בוחר איזה סרט כל המשפחה רואה בערב סרט הבא!",
+    "cost": 500,
+    "rarity": "RARE",
+    "icon": "award",
+    "bgColor": "bg-blue-500",
+    "borderColor": "border-blue-700"
+  },
+  {
+    "id": "trip-pick",
+    "title": "בוחר טיול",
+    "type": "סוף שבוע",
+    "desc": "אתה מחליט לאן הולכים לטייל בשבת הקרובה.",
+    "cost": 1200,
+    "rarity": "EPIC",
+    "icon": "flag",
+    "bgColor": "bg-purple-500",
+    "borderColor": "border-purple-700"
+  },
+  {
+    "id": "new-toy",
+    "title": "צעצוע חדש",
+    "type": "חנות צעצועים",
+    "desc": "בוחרים צעצוע חדש לגמרי בביקור הבא בחנות!",
+    "cost": 5000,
+    "rarity": "LEGENDARY",
+    "icon": "zap",
+    "bgColor": "bg-yellow-400",
+    "borderColor": "border-yellow-600"
+  }
+]

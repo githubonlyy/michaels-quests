@@ -1,0 +1,490 @@
+[
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍎",
+      "n": 5
+    },
+    "right": {
+      "emoji": "🍎",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר תפוחים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍎",
+      "n": 2
+    },
+    "right": {
+      "emoji": "🍎",
+      "n": 5
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות תפוחים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🚗",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🚗",
+      "n": 1
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר מכוניות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🚗",
+      "n": 1
+    },
+    "right": {
+      "emoji": "🚗",
+      "n": 4
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות מכוניות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "⭐",
+      "n": 6
+    },
+    "right": {
+      "emoji": "⭐",
+      "n": 3
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר כוכבים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "⭐",
+      "n": 3
+    },
+    "right": {
+      "emoji": "⭐",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות כוכבים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🦖",
+      "n": 6
+    },
+    "right": {
+      "emoji": "🦖",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר דינוזאורים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🦖",
+      "n": 2
+    },
+    "right": {
+      "emoji": "🦖",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות דינוזאורים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🎈",
+      "n": 5
+    },
+    "right": {
+      "emoji": "🎈",
+      "n": 3
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר בלונים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🎈",
+      "n": 3
+    },
+    "right": {
+      "emoji": "🎈",
+      "n": 5
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות בלונים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🐶",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🐶",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר כלבים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🐶",
+      "n": 2
+    },
+    "right": {
+      "emoji": "🐶",
+      "n": 4
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות כלבים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍌",
+      "n": 6
+    },
+    "right": {
+      "emoji": "🍌",
+      "n": 4
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר בננות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍌",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🍌",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות בננות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "⚽",
+      "n": 5
+    },
+    "right": {
+      "emoji": "⚽",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר כדורים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "⚽",
+      "n": 2
+    },
+    "right": {
+      "emoji": "⚽",
+      "n": 5
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות כדורים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🚀",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🚀",
+      "n": 1
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר חלליות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🚀",
+      "n": 1
+    },
+    "right": {
+      "emoji": "🚀",
+      "n": 4
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות חלליות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🐟",
+      "n": 6
+    },
+    "right": {
+      "emoji": "🐟",
+      "n": 3
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר דגים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🐟",
+      "n": 3
+    },
+    "right": {
+      "emoji": "🐟",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות דגים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍪",
+      "n": 6
+    },
+    "right": {
+      "emoji": "🍪",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר עוגיות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🍪",
+      "n": 2
+    },
+    "right": {
+      "emoji": "🍪",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות עוגיות?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🦋",
+      "n": 5
+    },
+    "right": {
+      "emoji": "🦋",
+      "n": 3
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר פרפרים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🦋",
+      "n": 3
+    },
+    "right": {
+      "emoji": "🦋",
+      "n": 5
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות פרפרים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🥚",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🥚",
+      "n": 2
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר ביצים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🥚",
+      "n": 2
+    },
+    "right": {
+      "emoji": "🥚",
+      "n": 4
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות ביצים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🌻",
+      "n": 6
+    },
+    "right": {
+      "emoji": "🌻",
+      "n": 4
+    },
+    "ask": "more",
+    "speak": "איפה יש יותר פרחים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "count",
+    "left": {
+      "emoji": "🌻",
+      "n": 4
+    },
+    "right": {
+      "emoji": "🌻",
+      "n": 6
+    },
+    "ask": "less",
+    "speak": "איפה יש פחות פרחים?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 5,
+    "b": 2,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 3,
+    "b": 7,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 8,
+    "b": 4,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 1,
+    "b": 6,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 9,
+    "b": 5,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 2,
+    "b": 8,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 7,
+    "b": 3,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 4,
+    "b": 9,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 6,
+    "b": 1,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 3,
+    "b": 9,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 8,
+    "b": 2,
+    "ask": "bigger",
+    "speak": "איזה מספר גדול יותר?",
+    "answerSpeak": "בצד שמאל"
+  },
+  {
+    "kind": "number",
+    "a": 5,
+    "b": 9,
+    "ask": "smaller",
+    "speak": "איזה מספר קטן יותר?",
+    "answerSpeak": "בצד שמאל"
+  }
+]

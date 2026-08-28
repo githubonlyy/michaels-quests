@@ -1,0 +1,218 @@
+[
+  {
+    "emoji": "🐮",
+    "match": "🥛",
+    "speak": "מה נותנת הפרה?",
+    "answerSpeak": "חלב"
+  },
+  {
+    "emoji": "🐔",
+    "match": "🥚",
+    "speak": "מה מטילה התרנגולת?",
+    "answerSpeak": "ביצה"
+  },
+  {
+    "emoji": "🐝",
+    "match": "🍯",
+    "speak": "מה מכינה הדבורה?",
+    "answerSpeak": "דבש"
+  },
+  {
+    "emoji": "🐶",
+    "match": "🦴",
+    "speak": "מה הכלב אוהב לכרסם?",
+    "answerSpeak": "עצם"
+  },
+  {
+    "emoji": "🐱",
+    "match": "🐟",
+    "speak": "מה החתול אוהב לאכול?",
+    "answerSpeak": "דג"
+  },
+  {
+    "emoji": "🐰",
+    "match": "🥕",
+    "speak": "מה הארנב אוהב לאכול?",
+    "answerSpeak": "גזר"
+  },
+  {
+    "emoji": "🐵",
+    "match": "🍌",
+    "speak": "מה הקוף אוהב לאכול?",
+    "answerSpeak": "בננה"
+  },
+  {
+    "emoji": "🐭",
+    "match": "🧀",
+    "speak": "מה העכבר אוהב לאכול?",
+    "answerSpeak": "גבינה"
+  },
+  {
+    "emoji": "🐿️",
+    "match": "🌰",
+    "speak": "מה הסנאי אוסף?",
+    "answerSpeak": "אגוז"
+  },
+  {
+    "emoji": "🐷",
+    "match": "🌽",
+    "speak": "מה החזיר אוכל?",
+    "answerSpeak": "תירס"
+  },
+  {
+    "emoji": "🦁",
+    "match": "🥩",
+    "speak": "מה האריה אוכל?",
+    "answerSpeak": "בשר"
+  },
+  {
+    "emoji": "🐘",
+    "match": "🥜",
+    "speak": "מה הפיל אוהב?",
+    "answerSpeak": "בוטן"
+  },
+  {
+    "emoji": "🦋",
+    "match": "🌸",
+    "speak": "לאן עף הפרפר?",
+    "answerSpeak": "לפרח"
+  },
+  {
+    "emoji": "🐦",
+    "match": "🪺",
+    "speak": "איפה גרה הציפור?",
+    "answerSpeak": "בקן"
+  },
+  {
+    "emoji": "🚗",
+    "match": "🛞",
+    "speak": "מה יש למכונית?",
+    "answerSpeak": "גלגל"
+  },
+  {
+    "emoji": "🚀",
+    "match": "🌙",
+    "speak": "לאן טסה החללית?",
+    "answerSpeak": "לירח"
+  },
+  {
+    "emoji": "✈️",
+    "match": "☁️",
+    "speak": "איפה טס המטוס?",
+    "answerSpeak": "בעננים"
+  },
+  {
+    "emoji": "🚤",
+    "match": "🌊",
+    "speak": "איפה שטה הסירה?",
+    "answerSpeak": "בים"
+  },
+  {
+    "emoji": "🚒",
+    "match": "🔥",
+    "speak": "מה מכבית האש מכבה?",
+    "answerSpeak": "אש"
+  },
+  {
+    "emoji": "🚜",
+    "match": "🌾",
+    "speak": "איפה עובד הטרקטור?",
+    "answerSpeak": "בשדה"
+  },
+  {
+    "emoji": "🌧️",
+    "match": "☂️",
+    "speak": "מה לוקחים כשיורד גשם?",
+    "answerSpeak": "מטרייה"
+  },
+  {
+    "emoji": "❄️",
+    "match": "🧤",
+    "speak": "מה לובשים כשקר?",
+    "answerSpeak": "כפפות"
+  },
+  {
+    "emoji": "☀️",
+    "match": "🕶️",
+    "speak": "מה שמים כשהשמש חזקה?",
+    "answerSpeak": "משקפי שמש"
+  },
+  {
+    "emoji": "🦷",
+    "match": "🪥",
+    "speak": "עם מה מצחצחים שיניים?",
+    "answerSpeak": "מברשת שיניים"
+  },
+  {
+    "emoji": "🔑",
+    "match": "🚪",
+    "speak": "מה המפתח פותח?",
+    "answerSpeak": "דלת"
+  },
+  {
+    "emoji": "✏️",
+    "match": "📒",
+    "speak": "על מה כותבים עם עיפרון?",
+    "answerSpeak": "מחברת"
+  },
+  {
+    "emoji": "🍞",
+    "match": "🧈",
+    "speak": "מה מורחים על הלחם?",
+    "answerSpeak": "חמאה"
+  },
+  {
+    "emoji": "👣",
+    "match": "👟",
+    "speak": "מה נועלים על הרגליים?",
+    "answerSpeak": "נעליים"
+  },
+  {
+    "emoji": "🌱",
+    "match": "💧",
+    "speak": "מה הצמח צריך כדי לגדול?",
+    "answerSpeak": "מים"
+  },
+  {
+    "emoji": "🐸",
+    "match": "🪷",
+    "speak": "על מה יושב הצפרדע?",
+    "answerSpeak": "עלה במים"
+  },
+  {
+    "emoji": "🦖",
+    "match": "🌴",
+    "speak": "איפה גר הדינוזאור?",
+    "answerSpeak": "ביער"
+  },
+  {
+    "emoji": "🍦",
+    "match": "🥄",
+    "speak": "עם מה אוכלים גלידה?",
+    "answerSpeak": "כפית"
+  },
+  {
+    "emoji": "🎸",
+    "match": "🎵",
+    "speak": "מה יוצא מהגיטרה?",
+    "answerSpeak": "מוזיקה"
+  },
+  {
+    "emoji": "🐧",
+    "match": "🧊",
+    "speak": "איפה חי הפינגווין?",
+    "answerSpeak": "על הקרח"
+  },
+  {
+    "emoji": "🕷️",
+    "match": "🕸️",
+    "speak": "מה העכביש טווה?",
+    "answerSpeak": "קורים"
+  },
+  {
+    "emoji": "⚽",
+    "match": "🥅",
+    "speak": "לאן בועטים את הכדור?",
+    "answerSpeak": "לשער"
+  }
+]
