@@ -32,6 +32,11 @@ jobs:
         run: npm audit --audit-level=high
         continue-on-error: true
 
+      # a JSX identifier that is imported nowhere builds and tests fine, then
+      # white-screens the app; .oxlintrc.json makes that an error
+      - name: Lint
+        run: npx oxlint src --max-warnings 200
+
       - name: Test
         run: npm test
 
