@@ -639,7 +639,7 @@ export default function Draw({ onClose }) {
     if (saving) return
     if (!hasOps && isBlank) {
       sfx.buzz()
-      notify('הדף ריק — ציירי משהו קודם!')
+      notify('הדף ריק — צייר משהו קודם!')
       return
     }
     setSaving(true)
@@ -713,7 +713,7 @@ export default function Draw({ onClose }) {
   }
 
   const dollTool = () => {
-    pickTool('doll', 'הוסיפי אותי')
+    pickTool('doll', 'הוסף אותי')
     getDollImage().catch(() => {})
   }
 
@@ -822,7 +822,7 @@ export default function Draw({ onClose }) {
             >
               <span className="text-2xl leading-none">{sticker}</span>
             </ToolBtn>
-            <ToolBtn ref={dollBtnRef} active={tool === 'doll'} label="הוסיפי אותי" onClick={dollTool}>
+            <ToolBtn ref={dollBtnRef} active={tool === 'doll'} label="הוסף אותי" onClick={dollTool}>
               <Avatar size={30} />
             </ToolBtn>
             <ToolBtn
