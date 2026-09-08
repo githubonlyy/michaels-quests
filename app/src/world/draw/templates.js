@@ -131,7 +131,8 @@ const cupcake = [
   'M208 88 C214 72 226 64 240 60',
 ]
 
-export const BLANK_TEMPLATE = { id: 'blank', name: 'דף ריק', emoji: '⬜', paths: [] }
+// kind marks these apart from the 'image' pages in draw/familyPages.js
+export const BLANK_TEMPLATE = { kind: 'paths', id: 'blank', name: 'דף ריק', emoji: '⬜', paths: [] }
 
 export const TEMPLATES = [
   BLANK_TEMPLATE,
