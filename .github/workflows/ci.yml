@@ -1,0 +1,46 @@
+name: CI
+
+# This repo is retired as a source. githubonlyy/kids-quests builds Michael's
+# profile and force-pushes the result to this repo's gh-pages branch, which is
+# what Pages serves and what the tablet loads. There is nothing here to build.
+#
+# The job is still called `build` because that is the required status check on
+# master, and deleting it would leave every future pull request waiting forever
+# on a check that can no longer report. So it stays, and it checks something
+# true instead: that the dead source has not come back. A check that cannot
+# fail would be worse than no check at all.
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: The app source stays gone
+        run: |
+          for path in app package.json deploy.ps1; do
+            if [ -e "$path" ]; then
+              echo "::error::$path is back. This repo is a deploy target only —"
+              echo "::error::the source lives in githubonlyy/kids-quests."
+              exit 1
+            fi
+          done
+          echo "No app source here, as intended."
+
+      - name: The README says where the source went
+        run: |
+          if ! grep -q "githubonlyy/kids-quests" README.md; then
+            echo "::error::README.md must point at githubonlyy/kids-quests, or"
+            echo "::error::whoever lands here next will edit a dead tree."
+            exit 1
+          fi
+          echo "README points at the monorepo."
