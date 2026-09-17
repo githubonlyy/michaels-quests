@@ -1,35 +1,28 @@
 # Michael's Quests · המסע של מיכאל
 
-Tablet-first learning game for a four-year-old in gan. Same engine as
-[Melanie's Quests](https://github.com/githubonlyy/melanies-quests) and
-[Tommy's Quests](https://github.com/githubonlyy/tommys-quests), retuned for a
-pre-reader who is also pre-counter: six short subjects, Hebrew text-to-speech on
-every prompt and every answer, no timers, three pick-each-time worlds
-(מכוניות / דינוזאורים / חלל), and a boy avatar that coins buy clothes for.
+Tablet-first learning game for a pre-reader in gan.
 
-- Live: https://githubonlyy.github.io/michaels-quests/
-- Design spec: [docs/superpowers/specs/2026-08-28-michaels-quests-design.md](docs/superpowers/specs/2026-08-28-michaels-quests-design.md)
+- **Live:** https://githubonlyy.github.io/michaels-quests/
+- **Source:** [githubonlyy/kids-quests](https://github.com/githubonlyy/kids-quests) — not here
 
-## Develop
+## This repo is not where the app is built
 
-```powershell
-cd app
-npm ci
-npm run dev      # http://localhost:5173 — host:true so the tablet on the same WiFi can open it
-npm test         # vitest
-npm run lint     # oxlint
-npm run build
-```
+One engine now serves all three children. The source moved to `kids-quests` in
+September 2026, and the `app/` tree that used to live here was deleted on
+2026-09-12 rather than left to rot into a second, wrong answer.
 
-Deploys automatically to GitHub Pages on push to `master` (`.github/workflows/ci.yml`).
-`deploy.ps1` is a manual fallback.
+What remains is the published site: GitHub Pages serves the `gh-pages` branch,
+and `kids-quests` CI force-pushes each new build to it. The URL, the home-screen
+icon and the saved progress in `localStorage` (`michaels-quests-v1`) are
+unchanged — keeping them is the reason this repo still exists.
 
-## Parent notes
+To change anything about the app — subjects, questions, rewards, the avatar,
+Michael's own content under `src/profiles/michael/` — work in `kids-quests`. A
+push to its `master` rebuilds and redeploys all three children.
 
-- Six subjects: ספירה 1–10, צבעים, צורות ודפוסים, זיהוי אותיות, גדול/קטן, התאמה.
-  6 questions per match, no timer, win at 4 correct.
-- Parent tab PIN defaults to `1234` — change it on first use (הורים → החלפת קוד).
-- Questions live in `app/src/data/questions/*.json` — plain JSON, edit freely.
-- Real-world rewards are `app/src/data/shop.json`; avatar clothes are `app/src/data/wardrobe.json`.
-- Economy knobs: `app/src/data/config.json` (questions per match, win threshold, daily goal 2, chest).
-- Everything is stored in the browser's localStorage (`michaels-quests-v1`); clearing site data resets progress.
+His design spec moved with the source and now lives in `kids-quests` under
+`docs/superpowers/specs/`, together with the boy-games spec that had never been
+merged and existed only on a branch here.
+
+The history here is intact: every commit up to the migration is still in this
+repo, and the old source is recoverable from it.
